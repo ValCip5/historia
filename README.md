@@ -7,6 +7,27 @@
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
 </p>
 
+ADMIN: username y password: admin
+(esta vez si funciona)
+
+(Incluir carpeta vendor por las dudas pero no deberia ser necesario)
+
+Si salta error 500 lo más probable es que sea la imagen, intentá con otra y seguro debería funcionar
+-------
+
+Crear una base llamada "historia", pararse en la carpeta del proyecto con la consola, escribir "php artisan migrate" , luego "php artisan db:seed"
+
+Cosas que faltan:
+- Subscripción
+- Dashboard de Subscripción (admin, poder ver los usuarios, y de tener uno, el servicio que tienen
+contratado, en el caso del servicio para contratar, o el historial de
+compras realizada, en el caso del e-commerce. Que muestre algunas estadísticas
+relevantes (ej: plan con más suscriptores, productos más
+comprados, mes con mayor facturación, etc).)
+- El usuario común solo puede hacer un posteo y comentario por día.
+- Que el usuario común pueda comprar (con mercadopago sandbox), ver (con algunos usuarios ya cargados en los seeders), y cancelar su subscripción.
+- Validaciones de verdad en registro y login.
+
 Sitio:
 La web debe componerse de dos partes: una parte para los usuarios
 comunes (&quot;el sitio&quot;) y otra parte para la administración (&quot;el admin&quot;).
@@ -26,7 +47,6 @@ servicio/producto/e-commerce o de temas relacionados.
 ver/editar su información.
 ● Si el sitio es un servicio/producto para su contratación, debe poder
 administrar su plan de suscripción, incluyendo cancelarlo,
-
 cambiarlo, etc, y ver desde cuándo está suscripto. Esta información
 debe ya estar cargada desde los Seeders para, al menos, algunos
 usuarios.
