@@ -1,0 +1,23 @@
+Diseño y desarrollo web
+
+Portales y comercio electronico
+
+1er cuatrimestre
+
+2022
+
+5a
+
+Cipriano Valentín
+
+Gallino Santiago
+
+1er parcial
+
+ADMIN: username y password: admin
+(esta vez si funciona)
+
+(NO INCLUYE CARPETA VENDOR)
+-------
+
+Crear una base llamada "historia", pararse en la carpeta del proyecto con la consola, escribir "php artisan migrate" , luego "php artisan db:seed"
