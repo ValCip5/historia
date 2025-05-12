@@ -17,7 +17,7 @@ Gallino Santiago
 ADMIN: username y password: admin
 (esta vez si funciona)
 
-(Incluye carpeta vendor por si las moscas, no quería arriesgarme a desaprobar </3)
+(Incluir carpeta vendor por las dudas pero no deberia ser necesario)
 
 Si salta error 500 lo más probable es que sea la imagen, intentá con otra y seguro debería funcionar
 -------
