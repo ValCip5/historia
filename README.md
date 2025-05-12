@@ -27,6 +27,8 @@ comprados, mes con mayor facturación, etc).)
 - El usuario común solo puede hacer un posteo y comentario por día.
 - Que el usuario común pueda comprar (con mercadopago sandbox), ver (con algunos usuarios ya cargados en los seeders), y cancelar su subscripción.
 - Validaciones de verdad en registro y login.
+- Base de Datos: Debe constar de, al menos, 3 tablas, usuarios y otras dos tablas para el blog/novedades/servicios. (quizas no falta)
+- La tabla de usuarios debe estar constituida de al menos 3 campos: uno para el id, uno para el nombre de usuario, otro para el password. Al menos una de las otras tablas debe estar constituida de al menos 5 campos (sin contar PK y los campos de fechas de Laravel). Toda la creación de tablas, y la carga inicial de datos, deberá estar realizada con migrations y seeders. Debe haber relaciones entre tablas. (quizas no falta)
 
 Sitio:
 La web debe componerse de dos partes: una parte para los usuarios
