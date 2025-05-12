@@ -1,0 +1,907 @@
+* {
+    font-family: 'coregular';
+    letter-spacing: -0.025em;
+}
+
+:root{
+    --blanco: #fdfdfd;
+    --negro: #151515;
+    --gris: #666666;
+    --borde: #dadce0;
+}
+
+@font-face {
+    font-family: 'cobold';
+    src: url('assets/brcobane-bold-webfont.woff2') format('woff2'),
+         url('assets/brcobane-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+@font-face {
+    font-family: 'colight';
+    src: url('assets/brcobane-extralight-webfont.woff2') format('woff2'),
+         url('assets/brcobane-extralight-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+@font-face {
+    font-family: 'conormal';
+    src: url('assets/brcobane-light-webfont.woff2') format('woff2'),
+         url('assets/brcobane-light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+@font-face {
+    font-family: 'comedium';
+    src: url('assets/brcobane-medium-webfont.woff2') format('woff2'),
+         url('assets/brcobane-medium-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+@font-face {
+    font-family: 'coregular';
+    src: url('assets/brcobane-regular-webfont.woff2') format('woff2'),
+         url('assets/brcobane-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+@font-face {
+    font-family: 'cosemibold';
+    src: url('assets/brcobane-semibold-webfont.woff2') format('woff2'),
+         url('assets/brcobane-semibold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+@font-face {
+    font-family: 'cothin';
+    src: url('assets/brcobane-thin-webfont.woff2') format('woff2'),
+         url('assets/brcobane-thin-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body{
+    background: var(--blanco);
+}
+
+ul{
+    list-style-type: none;
+}
+
+ol, ul {
+    padding-left: unset;
+    list-style-type: none;
+}
+
+#nav{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+#nav a{
+    font-size: 16px;
+    font-family: 'coregular';
+}
+
+header{
+    border-bottom: 1px solid var(--borde);
+    background: var(--blanco);
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+}
+
+.navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .show>.nav-link {
+    color: var(--negro);
+}
+
+.nav-item{
+    margin-left: 25px;
+}
+
+#cta{
+    padding: 8px 30px;
+    background: var(--negro);
+    color: var(--blanco);
+    border-radius: 50px;
+}
+
+#seccionUnoHome{
+    padding-bottom: 85px;
+    padding-top: 155px;
+    border-bottom: 1px solid var(--borde);
+}
+
+.row {
+    --bs-gutter-x: unset;
+}
+
+#seccionUnoHome h1{
+    font-size: 68px;
+    font-family: 'cosemibold';
+    letter-spacing: -0.050em;
+    font-weight: 700;
+    line-height: 73px;
+}
+
+#seccionUnoHome p{
+    font-size: 20px;
+    line-height: 28px;
+    margin-bottom: 60px;
+    font-family: 'coregular';
+    color: var(--gris);
+}
+
+#seccionUnoHome .imagen{
+    text-align: center;
+}
+
+#seccionUnoHome .boton{
+    width: 150px;
+    padding: 12px 0px;
+    background: var(--negro);
+    text-align: center;
+    border-radius: 50px;
+}
+
+#seccionUnoHome a{
+    padding: 8px 25px;
+    font-size: 18px;
+    color: var(--blanco);
+    text-decoration: none;
+}
+
+#seccionDosHome{
+    padding-top: 85px;
+    padding-bottom: 85px;
+    border-bottom: 1px solid var(--borde);
+}
+
+#seccionDosHome span{
+    font-weight: 500;
+}
+
+#seccionDosHome .tiempo{
+    font-weight: 300;
+    color: var(--gris);
+}
+
+#seccionDosHome a{
+    color: var(--negro);
+    text-decoration: none;
+}
+
+#seccionDosHome li{
+    padding: 0px 28px;
+}
+
+#seccionDosHome h2, #seccionTresHome h2{
+    font-size: 24px;
+    color: var(--negro);
+    font-weight: 700;
+    letter-spacing: -0.030em;
+}
+
+#seccionDosHome i{
+    font-size: 20px;
+    color: var(--negro);
+}
+
+#seccionDosHome h3{
+    font-size: 18px;
+    letter-spacing: -0.050em;
+    font-weight: 700;
+}
+
+#seccionTresHome{
+    padding-top: 85px;
+    padding-bottom: 85px;
+}
+
+footer{
+    margin-top: 20px;
+    padding-top: 45px;
+    padding-bottom: 40px;
+    border-top: 1px solid var(--borde);
+}
+
+footer ul{
+    display: flex;
+    margin-bottom: unset;
+    justify-content: flex-end;
+}
+
+footer ul li{
+    padding-left: 25px;
+}
+
+footer ul li a{
+    color: var(--gris);
+    text-decoration: none;
+}
+
+.bloque{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.bloque li{
+    padding-right: 10px;
+    padding-bottom: 10px;
+}
+
+.abajo{
+    padding-right: 80px;
+    padding-top: 45px;
+}
+
+.bloque button{
+    background: none;
+    border: 1px solid var(--borde);
+    padding: 10px;
+    border-radius: 5px;
+    color: var(--gris);
+}
+
+#seccionTresHome h3 a{
+    font-family: 'cosemibold';
+    color: var(--negro);
+    text-decoration: none;
+    letter-spacing: -0.040em;
+}
+
+#seccionTresHome p{
+    font-size: 18px;
+    color: #666666;
+    font-family: 'coregular';
+}
+
+#seccionTresHome input, #seccionPanelAdmin input{
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid var(--borde);
+}
+
+#seccionTresHome select, #seccionPanelAdmin select{
+    padding: 13px 10px;
+    border-radius: 5px;
+    border: 1px solid var(--borde);
+}
+
+#buscarAdmin{
+            padding: 8px 30px !important;
+            background: var(--negro);
+            color: var(--blanco);
+            border-radius: 50px !important;
+            border: unset;
+}
+
+#titulo{
+    width: 320px;
+    margin-right: 10px;
+}
+
+#tiempo{
+    margin-right: 10px;
+}
+
+#seccionTresHome .tiempo{
+    color: #666666;
+}
+
+#seccionUnoNoticia{
+    padding-bottom: 85px;
+    padding-top: 155px;
+}
+
+#divNoticia, #divComentarios, #divEscribir, .divIngresar, #divNosotros{
+    max-width: 800px;
+    padding: 0 28px;
+    margin: auto;
+}
+
+.descripcion{
+    color: var(--gris);
+}
+
+#seccionUnoNoticia h1{
+    font-size: 36px;
+    font-family: 'cosemibold';
+    letter-spacing: -0.050em;
+    font-weight: 700;
+}
+
+#seccionUnoNoticia img{
+    border-radius: 5px;
+}
+
+#seccionUnoNoticia p{
+    font-size: 20px;
+    font-family: 'coregular';
+}
+
+.laNoticia p{
+    font-size: 20px;
+}
+
+#seccionDosNoticia{
+    padding-top: 85px;
+    padding-bottom: 85px;
+    border-top: 1px solid var(--borde);
+}
+
+#seccionUnoNoticia i, #seccionComentarios i{
+    position: relative;
+    top: 2px;
+    font-size: 24px;
+    color: var(--gris);
+}
+
+#seccionUnoNoticia .numeros, #seccionComentarios .numeros{
+    font-size: 18px;
+    color: var(--gris);
+    display: grid;
+    align-items: center;
+}
+
+#seccionUnoNoticia button, #seccionComentarios button{
+    padding: unset;
+    background: none;
+    border: unset;
+}
+
+.comLike{
+    border-top: 1px solid var(--borde);
+    display: flex;
+}
+
+#seccionDosNoticia h2{
+    font-size: 24px;
+    color: var(--negro);
+    font-weight: 700;
+    letter-spacing: -0.030em;
+}
+
+#seccionDosNoticia li{
+    padding: 0px 28px;
+}
+
+#seccionDosNoticia{
+    padding-top: 85px;
+    padding-bottom: 85px;
+    border-bottom: unset !important;
+}
+
+#seccionDosNoticia span{
+    font-weight: 500;
+}
+
+#seccionDosNoticia .tiempo{
+    font-weight: 300;
+    color: var(--gris);
+}
+
+#seccionDosNoticia a{
+    color: var(--negro);
+    text-decoration: none;
+}
+
+#seccionDosNoticia i{
+    font-size: 20px;
+    color: var(--negro);
+}
+
+#seccionDosNoticia h3{
+    font-size: 18px;
+    letter-spacing: -0.050em;
+    font-weight: 700;
+}
+
+#seccionComentarios{
+    padding-top: 85px;
+    padding-bottom: 85px;
+    border-top: 1px solid var(--borde);
+}
+
+#seccionComentarios h2{
+    font-size: 24px;
+    color: var(--negro);
+    font-weight: 700;
+    letter-spacing: -0.030em;
+}
+
+#seccionComentarios span{
+    font-size: 18px;
+    font-family: 'cosemibold';
+}
+
+#seccionComentarios p{
+    font-size: 18px;
+    font-family: 'coregular';
+}
+
+#seccionPanel, #seccionPanelAdmin{
+    padding-bottom: 355px;
+    padding-top: 155px;
+}
+
+#seccionPanel h1, #seccionPanelAdmin h1{
+    font-size: 36px;
+    font-family: 'cosemibold';
+    letter-spacing: -0.050em;
+    font-weight: 700;
+    color: var(--negro);
+}
+
+.deTabla, .deTablaAdmin{
+    border: 1px solid var(--borde);
+    border-radius: 5px;
+    overflow-x: auto;
+}
+
+table{
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+}
+
+td, th{
+    padding: 20px;
+}
+
+td{
+    border-bottom: 1px solid var(--borde);
+}
+
+th{
+    border-bottom: 1px solid var(--borde);
+    border-right: 1px solid var(--borde);
+}
+
+.noBorde{
+    border-right: unset;
+}
+
+.noBordeAbajo{
+    border-bottom: unset;
+}
+
+.acciones{
+    text-align: center;
+}
+
+.editar{
+    padding: 15px 20px;
+    margin-right: 15px;
+    border-radius: 5px;
+    background: rgb(255, 255, 85);
+    border: 1px solid var(--negro);
+    color: var(--negro);
+    font-weight: 700;
+    width: 100px;
+    text-decoration: none;
+}
+
+.eliminar{
+    background: rgb(253, 85, 85);
+    padding: 11px 20px;
+    border: 1px solid var(--negro);
+    border-radius: 5px;
+    color: var(--negro);
+    font-weight: 700;
+    width: 100px;
+    text-decoration: none;
+}
+
+.close{
+    background: none;
+    border: none;
+}
+
+.equis{
+    font-size: 25px;
+}
+
+#volver{
+    padding: 11px 20px;
+    color: var(--negro);
+    background: none;
+    font-weight: 600;
+    border: 2px solid var(--negro);
+    border-radius: 5px;
+}
+
+.advertencia{
+    display: flex;
+    background: var(--borde);
+    margin-top: 45px;
+}
+
+#seccionEscribir h1{
+    font-size: 36px;
+    font-family: 'cosemibold';
+    letter-spacing: -0.050em;
+    font-weight: 700;
+    color: var(--negro);
+}
+
+#seccionEscribir{
+    padding-top: 155px;
+    padding-bottom: 85px;
+}
+
+#seccionEscribir p{
+    font-size: 16px;
+    font-family: 'coregular';
+    font-weight: 500;
+}
+
+#seccionEscribir h2{
+    font-size: 24px;
+    color: var(--gris);
+    font-weight: 700;
+    letter-spacing: -0.030em;
+}
+
+#seccionRegistrarse{
+    padding-top: 155px;
+    padding-bottom: 85px;
+}
+
+label{
+    font-size: 16px;
+    margin-top: 10px;
+    color: var(--gris);
+}
+
+.divIngresar h1{
+    font-size: 36px;
+    font-family: 'cosemibold';
+    letter-spacing: -0.050em;
+    font-weight: 700;
+    color: var(--negro);
+}
+
+.cta{
+    padding: 12px 28px;
+    border-radius: 50px;
+    border: unset;
+    background: var(--negro);
+    color: var(--blanco);
+}
+
+.form-control:focus {
+    color: unset;
+    border-color: unset;
+    box-shadow: 0 0 0 .25rem rgba(0, 0, 0, 0.25);
+}
+
+.aviso{
+    font-size: 18px;
+    text-align: center;
+}
+
+#seccionUnoNosotros{
+    padding-bottom: 85px;
+    padding-top: 155px;
+}
+
+#seccionUnoNosotros h1{
+    font-size: 68px;
+    font-family: 'cosemibold';
+    letter-spacing: -0.050em;
+    font-weight: 700;
+    line-height: 73px;
+}
+
+#seccionUnoNosotros p{
+    font-size: 20px;
+    color: var(--gris);
+}
+
+.admin{
+    position: relative;
+    text-align: center;
+    width: 100%;
+    padding: 20px 0;
+    background: #f3f3f3;
+    color: var(--gris);
+    top: 92px;
+    border-bottom: 1px solid var(--borde);
+}
+
+.admin p{
+    margin-bottom: unset;
+    font-size: 18px;
+}
+
+.navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover {
+    color: var(--negro);
+}
+
+.admin a{
+    color: var(--negro);
+}
+
+.separador{
+    border-bottom: 1px solid var(--borde);
+    margin-bottom: 30px;
+}
+
+.hayErrores{
+    border: 1px solid rgb(255, 59, 59);
+    color: rgb(255, 59, 59) !important;
+    font-weight: 500 !important;
+    padding: 16px;
+    margin-top: 18px;
+    border-radius: 6px;
+}
+
+.hayErrores p{
+    margin-bottom: unset;
+}
+
+#noticia-container textarea{
+        display: block;
+        width: 100%;
+        padding: .375rem .75rem;
+        font-size: 1rem;
+        font-weight: 400;
+        line-height: 1.5;
+        color: #212529;
+        background-color: #fff;
+        background-clip: padding-box;
+        border: 1px solid #ced4da;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        border-radius: .25rem;
+        transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+        margin-bottom: 15px;
+}
+
+.form-control:focus {
+    box-shadow: unset;
+}
+
+.image-input{
+    margin-bottom: 40px;
+}
+
+select{
+    padding: 0.475rem 0.75rem;
+    border: 1px solid var(--borde);
+    border-radius: 3px;
+}
+
+#divComentarios textarea{
+    width: 100%;
+}
+
+.eliCom{
+    padding: 8px 30px !important;
+    border: 2px solid rgb(255, 55, 55) !important;
+    color: rgb(255, 55, 55);
+    font-weight: 600;
+    border-radius: 50px;
+}
+
+#comentar, #likeStatus, .enviar, #cambiar{
+    padding: 8px 30px !important;
+    background: var(--negro);
+    color: var(--blanco);
+    border-radius: 50px;
+    border: unset;
+}
+
+#tuComentario{
+    border: 1px solid var(--borde);
+    box-shadow: rgba(99, 99, 99, 0.075) 0px 2px 8px 0px;
+}
+
+#enviar{
+    border-radius: 50px !important;
+    width: 110px;
+}
+
+.fotoDePerfil{
+    max-width: 100px;
+    border-radius: 12px;
+}
+
+.perfilP{
+    font-size: 18px;
+    color: var(--gris);
+}
+
+.remove-button{
+ margin-left: 10px;
+}
+
+.nombreAzul{
+    color: rgb(86, 86, 255);
+}
+
+.filtros{
+    width: 100%;
+}
+
+footer ul li a:hover{
+    color: #151515;
+}
+
+@media only screen and (max-width: 1200px) {
+    #seccionDosHome li{
+
+    }
+}
+
+@media only screen and (max-width: 991px) {
+    .nav-item {
+        margin-left: unset;
+    }
+
+    .navbar-light .navbar-toggler-icon {
+        background-image: url("../public/img/menu.png");
+    }
+
+    .navbar-toggler{
+        border: unset;
+    }
+
+    .navbar-toggler:focus {
+        text-decoration: none;
+        outline: 0;
+        box-shadow: unset; 
+    }
+
+    .navbar-collapse {
+        padding-top: 20px;
+        margin-top: 20px;
+        border-top: 1px solid var(--borde);
+        text-align: center;
+    }
+
+    #cta {
+        padding: 8px 0;
+        background: unset;
+        color: unset;
+    }
+
+    .editar{
+        margin-right: unset;
+        margin-bottom: 10px;
+    }
+
+    #seccionUnoHome .imagen {
+        margin-top: 50px;
+    }
+
+    #titulo{
+        margin-bottom: 10px;
+    }
+
+    #divNoticia, #divComentarios, #divEscribir, .divIngresar, #divNosotros{
+        padding: 0 11px;
+        max-width: 720px;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    #seccionDosHome li{
+        padding: unset;
+    }
+
+    #seccionUnoHome, #seccionEscribir, #seccionUnoNoticia{
+        padding-bottom: 55px;
+        padding-top: 125px;
+        border-bottom: 1px solid var(--borde);
+    }
+
+    #seccionDosHome, #seccionComentarios, #seccionDosNoticia {
+        padding-top: 55px;
+        padding-bottom: 55px;
+        border-bottom: 1px solid var(--borde);
+    }
+
+    #seccionUnoNosotros{
+        padding-bottom: 55px;
+        padding-top: 125px;
+    }
+
+    #seccionTresHome{
+        padding-top: 10px;
+        padding-bottom: 55px;
+    }
+
+    #seccionUnoHome h1 {
+        font-size: 32px;
+        line-height: 38px;
+    }
+
+    #seccionUnoNosotros h1 {
+        font-size: 32px;
+        line-height: 38px;
+    }
+
+    .columna{
+        flex-direction: column-reverse;
+    }
+
+    #seccionTresHome .col-8{
+        width: 100%;
+    }
+
+    .pie{
+        text-align: center;
+    }
+
+    footer ul {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    footer ul li {
+        padding: 10px 25px;
+    }
+
+    .abajo{
+        padding-right: unset;
+    }
+
+    .logoFooter{
+        padding-bottom: 30px;
+    }
+    
+    #seccionUnoHome p {
+        margin-bottom: 40px;
+    }
+
+    .arriba{
+        padding-top: 45px;
+        padding-bottom: 25px;
+    }
+
+    #titulo{
+        width: auto;
+    }
+
+    #divNoticia, #divComentarios, #divEscribir, .divIngresar, #divNosotros{
+        padding: 0 11px;
+        max-width: 540px;
+    }
+}
+
+@media only screen and (max-width: 575px) {
+    .container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl{
+        padding-right: 18px;
+        padding-left: 18px;
+    }
+
+    .bloque button {
+        padding: 6px;
+    }
+
+    #divNoticia, #divComentarios, #divEscribir, .divIngresar, #divNosotros{
+        padding: 0 18px;
+        max-width: unset;
+    }
+}
