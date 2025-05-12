@@ -11,6 +11,7 @@ Sitio:
 La web debe componerse de dos partes: una parte para los usuarios
 comunes (&quot;el sitio&quot;) y otra parte para la administración (&quot;el admin&quot;).
 El sitio, al menos, debe:
+
 ● Ofrecer a los usuarios algún servicio o producto, como por ejemplo:
 un servicio de hosting, servicio de auditoría, servicio de desarrollo,
 producto con suscripción (ej: un antivirus, una app online como
@@ -25,9 +26,7 @@ servicio/producto/e-commerce o de temas relacionados.
 ● Tener un perfil para los usuarios autenticados, donde puedan
 ver/editar su información.
 ● Si el sitio es un servicio/producto para su contratación, debe poder
-administrar su plan de suscripción, incluyendo cancelarlo,
-
-cambiarlo, etc, y ver desde cuándo está suscripto. Esta información
+administrar su plan de suscripción, incluyendo cancelarlo, cambiarlo, etc, y ver desde cuándo está suscripto. Esta información
 debe ya estar cargada desde los Seeders para, al menos, algunos
 usuarios.
 ● Si el sitio es un e-commerce, debe poder ver su carrito de compras,
