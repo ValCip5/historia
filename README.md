@@ -11,7 +11,6 @@ Sitio:
 La web debe componerse de dos partes: una parte para los usuarios
 comunes (&quot;el sitio&quot;) y otra parte para la administración (&quot;el admin&quot;).
 El sitio, al menos, debe:
-
 ● Ofrecer a los usuarios algún servicio o producto, como por ejemplo:
 un servicio de hosting, servicio de auditoría, servicio de desarrollo,
 producto con suscripción (ej: un antivirus, una app online como
@@ -26,7 +25,9 @@ servicio/producto/e-commerce o de temas relacionados.
 ● Tener un perfil para los usuarios autenticados, donde puedan
 ver/editar su información.
 ● Si el sitio es un servicio/producto para su contratación, debe poder
-administrar su plan de suscripción, incluyendo cancelarlo, cambiarlo, etc, y ver desde cuándo está suscripto. Esta información
+administrar su plan de suscripción, incluyendo cancelarlo,
+
+cambiarlo, etc, y ver desde cuándo está suscripto. Esta información
 debe ya estar cargada desde los Seeders para, al menos, algunos
 usuarios.
 ● Si el sitio es un e-commerce, debe poder ver su carrito de compras,
@@ -46,3 +47,52 @@ compras realizada, en el caso del e-commerce.
 ● Tener un &quot;Dashboard&quot; inicial que muestre algunas estadísticas
 relevantes (ej: plan con más suscriptores, productos más
 comprados, mes con mayor facturación, etc).
+
+Ambos deben incluir una semántica y correcta estructura de HTML, que
+será motivo de evaluación. Deben ofrecer además estilización en CSS
+personlizada por el alumno/a, pudiendo usar un framework de CSS como
+Bootstrap, Tailwind o Bulma.
+
+Base de Datos:
+Debe constar de, al menos, 3 tablas, usuarios y otras dos tablas para el
+blog/novedades/servicios.
+
+La tabla de usuarios debe estar constituida de al menos 3 campos: uno
+para el id, uno para el nombre de usuario, otro para el password.
+Al menos una de las otras tablas debe estar constituida de al menos 5
+campos (sin contar PK y los campos de fechas de Laravel).
+Toda la creación de tablas, y la carga inicial de datos, deberá estar
+realizada con migrations y seeders.
+Debe haber relaciones entre tablas.
+
+PHP:
+Debe usarse el framework Laravel 9+ aplicando los principios de la
+programación orientada a objetos, y aprovechando los mecanismos de
+trabajo ofrecidos por el mismo, siguiendo sus prácticas recomendadas.
+Las vistas deberán utilizar el motor de template Blade para su
+renderizado.
+Todos los ingresos de datos deben estar validados, e informar los errores
+ocurridos, en caso de haberlos.
+La tabla de los productos/noticias/etc debe poder hacer alta/modificación
+de imágenes.
+Debe haber al menos 2 roles para los usuarios: usuario común y
+administrador. Para la verificación del usuario administrador, debe
+realizarse un Middleware personalizado que haga tal verificación.
+Debe haber modelos relacionados, según las relaciones que existan en la
+base de datos.
+
+Se evaluará y tendrá impacto en la nota también:
+● Complejidad de la tarea realizada.
+● Accesibilidad, navegabilidad y usabilidad del sitio.
+● Tablas de relaciones extras en la base de datos.
+
+● Implementación de los principios de la Orientación a Objetos (ej:
+Principio de Responsabilidad Única).
+● Coherencia en los nombres de variables, clases, métodos, etc.
+● Uso correcto de las etiquetas semánticas de HTML.
+● Documentación apropiada usando PHPDoc.
+● Estilización del sitio.
+● Buena aplicación de los distintos tipos de componentes vistos en
+clase (Models, Controllers, Middlewares, etc).
+● Utilización adecuada de Ajax para mejorar la performance del sitio.
+● Prolijidad en el código y carpeta del proyecto.
