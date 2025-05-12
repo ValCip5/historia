@@ -17,7 +17,9 @@ Gallino Santiago
 ADMIN: username y password: admin
 (esta vez si funciona)
 
-(NO INCLUYE CARPETA VENDOR)
+(Incluye carpeta vendor por si las moscas, no quería arriesgarme a desaprobar </3)
+
+Si salta error 500 lo más probable es que sea la imagen, intentá con otra y seguro debería funcionar
 -------
 
 Crear una base llamada "historia", pararse en la carpeta del proyecto con la consola, escribir "php artisan migrate" , luego "php artisan db:seed"

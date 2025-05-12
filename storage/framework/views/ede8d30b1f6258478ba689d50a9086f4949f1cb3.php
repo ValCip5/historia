@@ -27,7 +27,6 @@
             <h1 class="mb-5">
                     Tus historias
                 </h1>
-
             <div class="deTabla">
             <table>
             <tr>
