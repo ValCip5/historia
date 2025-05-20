@@ -7,114 +7,58 @@
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
 </p>
 
-ADMIN: username y password: admin
-(esta vez si funciona)
+## About Laravel
 
-(Incluir carpeta vendor por las dudas pero no deberia ser necesario)
+Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
 
-Si salta error 500 lo más probable es que sea la imagen, intentá con otra y seguro debería funcionar
--------
+- [Simple, fast routing engine](https://laravel.com/docs/routing).
+- [Powerful dependency injection container](https://laravel.com/docs/container).
+- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
+- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
+- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
+- [Robust background job processing](https://laravel.com/docs/queues).
+- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
 
-Crear una base llamada "historia", pararse en la carpeta del proyecto con la consola, escribir "php artisan migrate" , luego "php artisan db:seed"
+Laravel is accessible, powerful, and provides tools required for large, robust applications.
 
-Cosas que faltan:
-- Subscripción
-- Dashboard de Subscripción (admin, poder ver los usuarios, y de tener uno, el servicio que tienen
-contratado, en el caso del servicio para contratar, o el historial de
-compras realizada, en el caso del e-commerce. Que muestre algunas estadísticas
-relevantes (ej: plan con más suscriptores, productos más
-comprados, mes con mayor facturación, etc).)
-- El usuario común solo puede hacer un posteo y comentario por día.
-- Que el usuario común pueda comprar (con mercadopago sandbox), ver (con algunos usuarios ya cargados en los seeders), y cancelar su subscripción.
-- Validaciones de verdad en registro y login.
-- Base de Datos: Debe constar de, al menos, 3 tablas, usuarios y otras dos tablas para el blog/novedades/servicios. (quizas no falta)
-- La tabla de usuarios debe estar constituida de al menos 3 campos: uno para el id, uno para el nombre de usuario, otro para el password. Al menos una de las otras tablas debe estar constituida de al menos 5 campos (sin contar PK y los campos de fechas de Laravel). Toda la creación de tablas, y la carga inicial de datos, deberá estar realizada con migrations y seeders. Debe haber relaciones entre tablas. (quizas no falta)
+## Learning Laravel
 
-Sitio:
-La web debe componerse de dos partes: una parte para los usuarios
-comunes (&quot;el sitio&quot;) y otra parte para la administración (&quot;el admin&quot;).
-El sitio, al menos, debe:
-● Ofrecer a los usuarios algún servicio o producto, como por ejemplo:
-un servicio de hosting, servicio de auditoría, servicio de desarrollo,
-producto con suscripción (ej: un antivirus, una app online como
-Figma), un videojuego, etc, o algún tipo de e-commerce. En caso de
-ser un servicio o suscripción, no es necesaria la implementación de
-un carrito de compras. Sí es necesario el carrito en caso de ser un e-
-commerce con productos a la venta.
-● Incluir una sección de blog/novedades/noticias donde se hable del
-servicio/producto/e-commerce o de temas relacionados.
-● Incluir una home que presente el producto.
-● Tener un registro y autenticación de usuarios.
-● Tener un perfil para los usuarios autenticados, donde puedan
-ver/editar su información.
-● Si el sitio es un servicio/producto para su contratación, debe poder
-administrar su plan de suscripción, incluyendo cancelarlo,
-cambiarlo, etc, y ver desde cuándo está suscripto. Esta información
-debe ya estar cargada desde los Seeders para, al menos, algunos
-usuarios.
-● Si el sitio es un e-commerce, debe poder ver su carrito de compras,
-realizar el pedido, y ver un historial de los pedidos realizados.
-● Ambos casos (suscripción/contratación de producto/servicio como -
-ecommerce) deben incluir la correspondiente pasarela de pago con
-el modo sandbox de MercadoPago.
+Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
 
-El admin, al menos, debe:
-● Requerir de una autenticación de un usuario administrador para
-acceder.
-● Proveer de un ABM para administrar las entradas del
-blog/novedades/noticias.
-● Poder ver los usuarios, y de tener uno, el servicio que tienen
-contratado, en el caso del servicio para contratar, o el historial de
-compras realizada, en el caso del e-commerce.
-● Tener un &quot;Dashboard&quot; inicial que muestre algunas estadísticas
-relevantes (ej: plan con más suscriptores, productos más
-comprados, mes con mayor facturación, etc).
+If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 2000 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
 
-Ambos deben incluir una semántica y correcta estructura de HTML, que
-será motivo de evaluación. Deben ofrecer además estilización en CSS
-personlizada por el alumno/a, pudiendo usar un framework de CSS como
-Bootstrap, Tailwind o Bulma.
+## Laravel Sponsors
 
-Base de Datos:
-Debe constar de, al menos, 3 tablas, usuarios y otras dos tablas para el
-blog/novedades/servicios.
+We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell).
 
-La tabla de usuarios debe estar constituida de al menos 3 campos: uno
-para el id, uno para el nombre de usuario, otro para el password.
-Al menos una de las otras tablas debe estar constituida de al menos 5
-campos (sin contar PK y los campos de fechas de Laravel).
-Toda la creación de tablas, y la carga inicial de datos, deberá estar
-realizada con migrations y seeders.
-Debe haber relaciones entre tablas.
+### Premium Partners
 
-PHP:
-Debe usarse el framework Laravel 9+ aplicando los principios de la
-programación orientada a objetos, y aprovechando los mecanismos de
-trabajo ofrecidos por el mismo, siguiendo sus prácticas recomendadas.
-Las vistas deberán utilizar el motor de template Blade para su
-renderizado.
-Todos los ingresos de datos deben estar validados, e informar los errores
-ocurridos, en caso de haberlos.
-La tabla de los productos/noticias/etc debe poder hacer alta/modificación
-de imágenes.
-Debe haber al menos 2 roles para los usuarios: usuario común y
-administrador. Para la verificación del usuario administrador, debe
-realizarse un Middleware personalizado que haga tal verificación.
-Debe haber modelos relacionados, según las relaciones que existan en la
-base de datos.
+- **[Vehikl](https://vehikl.com/)**
+- **[Tighten Co.](https://tighten.co)**
+- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
+- **[64 Robots](https://64robots.com)**
+- **[Cubet Techno Labs](https://cubettech.com)**
+- **[Cyber-Duck](https://cyber-duck.co.uk)**
+- **[Many](https://www.many.co.uk)**
+- **[Webdock, Fast VPS Hosting](https://www.webdock.io/en)**
+- **[DevSquad](https://devsquad.com)**
+- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
+- **[OP.GG](https://op.gg)**
+- **[WebReinvent](https://webreinvent.com/?utm_source=laravel&utm_medium=github&utm_campaign=patreon-sponsors)**
+- **[Lendio](https://lendio.com)**
 
-Se evaluará y tendrá impacto en la nota también:
-● Complejidad de la tarea realizada.
-● Accesibilidad, navegabilidad y usabilidad del sitio.
-● Tablas de relaciones extras en la base de datos.
+## Contributing
 
-● Implementación de los principios de la Orientación a Objetos (ej:
-Principio de Responsabilidad Única).
-● Coherencia en los nombres de variables, clases, métodos, etc.
-● Uso correcto de las etiquetas semánticas de HTML.
-● Documentación apropiada usando PHPDoc.
-● Estilización del sitio.
-● Buena aplicación de los distintos tipos de componentes vistos en
-clase (Models, Controllers, Middlewares, etc).
-● Utilización adecuada de Ajax para mejorar la performance del sitio.
-● Prolijidad en el código y carpeta del proyecto.
+Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+
+## Code of Conduct
+
+In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+
+## Security Vulnerabilities
+
+If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+
+## License
+
+The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).

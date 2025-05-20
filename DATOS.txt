@@ -4,7 +4,7 @@ Portales y comercio electronico
 
 1er cuatrimestre
 
-2022
+2025
 
 5a
 
@@ -12,12 +12,12 @@ Cipriano Valentín
 
 Gallino Santiago
 
-1er parcial
+Final
 
 ADMIN: username y password: admin
 (esta vez si funciona)
 
-(Incluir carpeta vendor por las dudas pero no deberia ser necesario)
+(Incluye carpeta vendor por si las moscas, no quería arriesgarme a desaprobar </3)
 
 Si salta error 500 lo más probable es que sea la imagen, intentá con otra y seguro debería funcionar
 -------
