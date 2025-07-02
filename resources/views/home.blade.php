@@ -8,7 +8,7 @@
     @if(Auth::user() && Auth::user()->es_admin)
         <div class="admin">
             <div class="container">
-            <p>Bienvenido administrador, haga click <a href="<?= url('/historias');?>">aquí</a> para ingresar al panel.</p>
+            <p>Bienvenido administrador, haga click <a href="<?= url('/historias');?>">aquí</a> para ingresar al panel de noticias, o sino haga click <a href="<?= url('/admin/panelmembresia');?>">aquí</a> para ingresar al panel de administración de usuarios.</p>
             </div>
         </div>
     @endif

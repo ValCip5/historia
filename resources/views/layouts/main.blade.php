@@ -29,7 +29,7 @@
                 <a class="nav-link" href="<?= url('/nosotros');?>">Nosotros</a>
                 </li>
                 <li class="nav-item">
-                <a class="nav-link" href="#">Membresía</a>
+                <a class="nav-link" href="<?= url('/membresia');?>">Membresía</a>
                 </li>
                 @if (Auth::check())
                     <li class="nav-item">

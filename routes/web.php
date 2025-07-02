@@ -5,6 +5,7 @@ use App\Http\Controllers\HomeController;
 use App\Http\Controllers\NoticiaController;
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\AuthController;
+use App\Http\Controllers\PagoController;
 
 /*
 |--------------------------------------------------------------------------
@@ -37,7 +38,21 @@ Route::get('historias/{id}/eliminar',
 
 Route::get('nosotros', function () {
     return view('nosotros');
-});
+})->name('nosotros');
+
+Route::get('membresia', function () {
+    return view('membresia');
+})->name('membresia');
+
+Route::get('pasarelapago', function () {
+    return view('pasarelapago');
+})->name('pasarelapago');
+
+Route::post('api/pago', 
+[PagoController::class, 'crearPago'])->name('mercado.pago');
+
+Route::post('api/usuarios/{id}/desuscribirse', 
+[PagoController::class, 'desuscribirse'])->name('user.desuscribirse');
 
 Route::get('usuarios/{id}/historias', 
 [UserController::class, 'historiasList'])->name('user.historias');
@@ -75,6 +90,11 @@ Route::post('api/historias/{id}/comentarios',
 Route::get('usuarios/{id}', 
 [UserController::class, 'editForm'])->name('user.perfil');
 
+Route::post('usuarios/{id}/imagen', 
+[UserController::class, 'editarImagen'])->name('user.editarImagen');
+
 Route::post('usuarios/{id}', 
 [UserController::class, 'editar'])->name('user.editar');
-    
+
+Route::get('admin/panelmembresia', 
+[UserController::class, 'usuariosAdminList'])->name('admin.membresia');

@@ -211,6 +211,24 @@ header{
     font-weight: 700;
 }
 
+.infoMembresia h2{
+    font-size: 24px;
+    color: var(--negro);
+    font-weight: 700;
+    letter-spacing: -0.030em;
+}
+
+.infoMembresia h3{
+    font-size: 22px;
+    letter-spacing: -0.050em;
+    font-weight: 700;
+}
+
+.infoMembresia p{
+    font-size: 18px;
+    color: var(--gris);
+}
+
 #seccionTresHome{
     padding-top: 85px;
     padding-bottom: 85px;
@@ -566,6 +584,47 @@ th{
     padding-bottom: 85px;
 }
 
+#seccionMembresia{
+    padding-top: 155px;
+    padding-bottom: 85px;
+}
+
+#seccionMembresia h1{
+    font-size: 68px;
+    font-family: 'cosemibold';
+    letter-spacing: -0.050em;
+    font-weight: 700;
+    line-height: 73px;
+    text-align: center;
+}
+
+#seccionMembresia p{
+    font-size: 20px;
+    font-family: 'coregular';
+    color: var(--gris);
+}
+
+.beneficios h2{
+    font-size: 24px;
+    font-family: 'cosemibold';
+    letter-spacing: -0.030em;
+    font-weight: 700;
+    color: var(--negro);
+}
+
+.cartaComun li, .cartaPremium li{
+    font-size: 18px;
+    font-family: 'coregular';
+}
+
+.cartaPremium{
+    border: 3px solid var(--negro);
+}
+
+.cartaPremium a{
+    text-decoration: none;
+}
+
 label{
     font-size: 16px;
     margin-top: 10px;
@@ -810,7 +869,7 @@ footer ul li a:hover{
         padding: unset;
     }
 
-    #seccionUnoHome, #seccionEscribir, #seccionUnoNoticia{
+    #seccionUnoHome, #seccionEscribir, #seccionUnoNoticia, #seccionMembresia{
         padding-bottom: 55px;
         padding-top: 125px;
         border-bottom: 1px solid var(--borde);
