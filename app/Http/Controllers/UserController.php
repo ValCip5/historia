@@ -116,11 +116,33 @@ class UserController extends Controller
         }
     }
 
-    public function editar(Request $request) {
+    public function editarImagen(Request $request) {
         $user = Auth::user();
         $user->foto_url = $this->uploadImage($request, 'imagen');
         $user->save();
         return view('perfil');
+    }
+
+    public function editar(Request $request) {
+        $user = Auth::user();
+        $user->nombre = $request->get('nombre');
+        $user->apellido = $request->get('apellido');
+        $user->save();
+        return view('perfil');
+    }
+
+    public function usuariosAdminList(Request $request) {
+        if(Auth::check()&&Auth::user()->es_admin){
+            $usuarios = Usuario::all();
+            return view('paneladminmembresia', [
+                'usuarios' => $usuarios,
+            ]);
+        }
+        else{
+            return redirect()
+                ->route('home.home')
+                ->with('message.error', 'Ruta inexistente');
+        }
     }
 
     protected function uploadImage(Request $request, $field){

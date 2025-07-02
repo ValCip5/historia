@@ -16,6 +16,7 @@ use Illuminate\Database\Eloquent\Model;
  * @property string $foto_url
  * @property boolean $es_miembro
  * @property boolean $es_admin
+ * @property \Illuminate\Support\Carbon|null $subscribed_at
  * @property string $password
  * @property string $email
  * @property \Illuminate\Support\Carbon|null $created_at
@@ -44,6 +45,7 @@ class Usuario extends Authenticatable
         'es_miembro',
         'es_admin',
         'password',
+        'subscribed_at',
         'email',
     ];
 }

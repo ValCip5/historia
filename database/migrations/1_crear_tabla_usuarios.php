@@ -23,6 +23,7 @@ return new class extends Migration
             $table->string('apellido');
             $table->string('email')->unique();
             $table->string('password');
+            $table->timestamp('subscribed_at')->nullable();
             $table->rememberToken();
             $table->timestamps();
         });

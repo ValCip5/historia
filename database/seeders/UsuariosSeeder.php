@@ -26,7 +26,36 @@ class UsuariosSeeder extends Seeder
                 'es_miembro' => '0',
                 'apellido' => 'nistrador',
                 'foto_url' => 'perfil.png',
+                'subscribed_at' => null,
+                'created_at' => date('Y-m-d H:i:s'),
+                'updated_at' => date('Y-m-d H:i:s'),
             ],
+            [
+                'email' => 'normal@normal',
+                'password' => Hash::make("normal"),
+                'username' => 'normal',
+                'nombre' => 'nor',
+                'es_admin' => '0',
+                'es_miembro' => '0',
+                'apellido' => 'mal',
+                'foto_url' => 'perfil.png',
+                'subscribed_at' => null,
+                'created_at' => date('Y-m-d H:i:s'),
+                'updated_at' => date('Y-m-d H:i:s'),
+            ],
+            [
+                'email' => 'membresia@membresia',
+                'password' => Hash::make("membresia"),
+                'username' => 'membresia',
+                'nombre' => 'mem',
+                'es_admin' => '0',
+                'es_miembro' => '1',
+                'apellido' => 'bresia',
+                'foto_url' => 'perfil.png',
+                'subscribed_at' => date('Y-m-d H:i:s'),
+                'created_at' => date('Y-m-d H:i:s'),
+                'updated_at' => date('Y-m-d H:i:s'),
+            ]
         ]);
     }
 }
